@@ -10,14 +10,10 @@ A mini data engineering project with MySQL + Python. It tracks library books, us
 Install dependencies:
 
 bash
-Copy
-Edit
 pip install -r requirements.txt
 Set up .env with your database credentials:
 
 ini
-Copy
-Edit
 DB_HOST=localhost
 DB_USER=root
 DB_PASSWORD=your_password
@@ -25,8 +21,8 @@ DB_NAME=library_db
 Run analysis script:
 
 bash
-Copy
-Edit
+```
+
 python src/analysis.py
 Project Structure
 data/ → SQL scripts and CSVs
@@ -45,30 +41,28 @@ Create and manage mock library database
 Fetch books, users, and borrow records
 
 Predict overdue books based on borrowing dates
-
+```
 yaml
-Copy
-Edit
+
 
 ---
 
 ### **3️⃣ requirements.txt**
 Create `requirements.txt` in the root folder:
-
+```
 mysql-connector-python
 python-dotenv
 
 vbnet
-Copy
-Edit
 
+
+```
 > Optional: If you plan to use pandas or ML later, you can add:
 pandas
 scikit-learn
 
 yaml
-Copy
-Edit
+
 
 ---
 
@@ -79,20 +73,14 @@ git init
 Add files:
 
 bash
-Copy
-Edit
 git add .
 Commit:
 
 bash
-Copy
-Edit
 git commit -m "Initial commit: project structure, db connection, analysis script"
 Connect to GitHub and push (replace <repo-url>):
 
 bash
-Copy
-Edit
 git remote add origin <repo-url>
 git branch -M main
 git push -u origin main
